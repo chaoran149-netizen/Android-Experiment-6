@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="12dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/game_heading" style="@style/Heading" android:text="@string/game_title"/>
+<TextView android:id="@+id/score" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Body"/>
+<TextView android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Body"/>
+<androidx.recyclerview.widget.RecyclerView android:id="@+id/card_grid" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:clipToPadding="false"/>
+<TextView android:id="@+id/game_status" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Body" android:accessibilityLiveRegion="polite"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/game_rules" android:text="@string/triple_rules" android:textSize="12sp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+<Button android:id="@+id/reset_game" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" style="@style/SecondaryButton" android:text="@string/reset"/>
+<Button android:id="@+id/exit_game" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" style="@style/SecondaryButton" android:text="@string/exit_game"/>
+</LinearLayout></LinearLayout>
